@@ -1,13 +1,7 @@
 import { icon } from "../utils/assets";
-import { cn } from "../utils/cn";
 import { motion } from "framer-motion";
 
-type BtnProps = {
-  tilted?: boolean;
-};
-
-function ArrowBtn(props: BtnProps) {
-  const { tilted = false } = props;
+function RoundArrowButton() {
   const arr = [0.6, 0.8, 1];
 
   const arrowTransition = {
@@ -23,10 +17,8 @@ function ArrowBtn(props: BtnProps) {
 
   return (
     <div
-      className={cn(
-        "bg-primary w-[117px] h-[122px] rounded-custom-small flex flex-col justify-center items-center shadow-custom-shadow",
-        { "-rotate-90": !tilted }
-      )}
+      className="
+        w-14 h-14 bg-primary-white rounded-full flex items-center justify-center shadow-custom-shadow"
     >
       {arr.map((num) => (
         <motion.div
@@ -39,10 +31,11 @@ function ArrowBtn(props: BtnProps) {
           key={num}
         >
           <img
-            src={icon("downArrow")}
-            alt="Arrow icon"
-            width={47.56}
-            height={27.16}
+            className="h-[20.88px] w-[11.48px]"
+            src={icon("rightArrowDark")}
+            alt="Arrow indicating next step"
+            height={20.88}
+            width={11.48}
           />
         </motion.div>
       ))}
@@ -50,4 +43,4 @@ function ArrowBtn(props: BtnProps) {
   );
 }
 
-export default ArrowBtn;
+export default RoundArrowButton;

@@ -48,7 +48,7 @@ const config = {
       //   "serenity-thin": ["var(--font-serenity-thin)"],
       // },
       fontFamily: {
-        notoserif: ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
+        notoSerif: ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
         serenity: ['"Serenity"', ...defaultTheme.fontFamily.sans],
         "serenity-thin": ['"Serenity-Thin"', ...defaultTheme.fontFamily.sans],
       },

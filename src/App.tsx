@@ -12,7 +12,7 @@ import Tips from "./pages/Tips";
 
 function App() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen bg-primary-white">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

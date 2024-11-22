@@ -24,14 +24,77 @@
   font-style: normal;
 }
 
-:root {
-  --font-afacadflux: "AfacadFlux", sans-serif;
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  src: url("./src/assets/fonts/AfacadFlux-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* :root {
+  --font-afacadflux: "AfacadFlux", sans-serif;
+} */
+
 body {
-  font-family: var(--font-afacadflux);
+  font-family: "AfacadFlux", sans-serif;
 }
 
 .btn {
-  @apply font-normal; /* Use a predefined Tailwind utility class */
+  @apply font-normal;
 }
