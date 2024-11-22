@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,20 @@
   body {
     @apply text-base;
   }
+}
+
+@font-face {
+  font-family: "Serenity";
+  src: url("/path-to-fonts/Serenity.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serenity-Thin";
+  src: url("/path-to-fonts/Serenity-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 :root {
@@ -17,5 +33,5 @@ body {
 }
 
 .btn {
-  @apply font-[400];
+  @apply font-normal; /* Use a predefined Tailwind utility class */
 }

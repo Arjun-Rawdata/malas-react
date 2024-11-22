@@ -1,3 +1,5 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 const config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -39,11 +41,16 @@ const config = {
         "2xl": "128px",
         "3xl": "176px",
       },
+      // fontFamily: {
+      //   afacadFlux: ["var(--font-afacadflux)", "sans-serif"],
+      //   notoSerif: ["var(--font-notoserif)", "serif"],
+      //   serenity: ["var(--font-serenity)"],
+      //   "serenity-thin": ["var(--font-serenity-thin)"],
+      // },
       fontFamily: {
-        afacadFlux: ["var(--font-afacadflux)", "sans-serif"],
-        notoSerif: ["var(--font-notoserif)", "serif"],
-        serenity: ["var(--font-serenity)"],
-        "serenity-thin": ["var(--font-serenity-thin)"],
+        notoserif: ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
+        serenity: ['"Serenity"', ...defaultTheme.fontFamily.sans],
+        "serenity-thin": ['"Serenity-Thin"', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         "strawberry-btn":
