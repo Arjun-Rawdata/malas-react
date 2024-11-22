@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-base;
+  }
+}
+
+:root {
+  --font-afacadflux: "AfacadFlux", sans-serif;
+}
+
+body {
+  font-family: var(--font-afacadflux);
+}
+
+.btn {
+  @apply font-[400];
+}
