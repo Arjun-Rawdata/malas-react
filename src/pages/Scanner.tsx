@@ -116,7 +116,13 @@ const Page = () => {
           </div>
         </div>
         <div className="btnWrapper">
-          <ArrowBtn tilted={true} />
+          <button
+            onClick={() => {
+              navigate("/measures");
+            }}
+          >
+            <ArrowBtn tilted={true} />
+          </button>
         </div>
       </div>
 

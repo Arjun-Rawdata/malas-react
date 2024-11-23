@@ -1,6 +1,6 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "mala's",
+  "productName": "mala's Test-Version",
   "version": "0.1.0",
   "identifier": "com.malas.dev",
   "build": {
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "mala's",
+        "title": "mala's Test-Version",
         "width": 1080,
         "height": 1920,
         "resizable": false,
