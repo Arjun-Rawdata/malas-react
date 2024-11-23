@@ -28,22 +28,24 @@ function App() {
 
   return (
     <CameraKit>
-      <div className="grid place-items-center">
-        <div className="w-[1080px] h-[1920px] border border-primary bg-primary-white relative">
-          <Router>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/filters" element={<Filters />} />
-              <Route path="/chances" element={<Chances />} />
-              <Route path="/desk" element={<Desk />} />
-              <Route path="/measures" element={<Measures />} />
-              <Route path="/preview" element={<Preview />} />
-              <Route path="/print" element={<Print />} />
-              <Route path="/scanner" element={<Scanner />} />
-              <Route path="/tips" element={<Tips />} />
-            </Routes>
-          </Router>
+      <div className="relative grid place-items-center">
+        <div className="grid place-items-center scale-[45%] h-full absolute">
+          <div className="w-[1080px] h-[1920px] border border-primary bg-primary-white relative">
+            <Router>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/filters" element={<Filters />} />
+                <Route path="/chances" element={<Chances />} />
+                <Route path="/desk" element={<Desk />} />
+                <Route path="/measures" element={<Measures />} />
+                <Route path="/preview" element={<Preview />} />
+                <Route path="/print" element={<Print />} />
+                <Route path="/scanner" element={<Scanner />} />
+                <Route path="/tips" element={<Tips />} />
+              </Routes>
+            </Router>
+          </div>
         </div>
       </div>
     </CameraKit>
