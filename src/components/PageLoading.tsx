@@ -1,6 +1,3 @@
-"use client";
-import React from "react";
-
 const PageLoading = () => {
   return (
     <div className="absolute h-screen top-0 w-full bg-primary-white grid place-items-center z-20">
