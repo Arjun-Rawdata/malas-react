@@ -1,6 +1,5 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "mala's Test-Version",
+  "productName": "malas",
   "version": "0.1.0",
   "identifier": "com.malas.dev",
   "build": {
@@ -12,20 +11,26 @@
   "app": {
     "windows": [
       {
-        "title": "mala's Test-Version",
+        "title": "mala\\'s Test-Version",
         "width": 1080,
         "height": 1920,
         "resizable": false,
-        "fullscreen": true
+        "fullscreen": true,
+        "additionalBrowserArgs": "--disable-web-security"
       }
     ],
     "security": {
-      "csp": null
+      "csp": null,
+      "capabilities": ["allow-origin"]
+    },
+    "cors": {
+      "enabled": false
     }
   },
   "bundle": {
     "active": true,
     "targets": "all",
+    "publisher": "Ctrl Alt Xp",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
