@@ -9,7 +9,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setIsThumbActive(false);
+    setIsThumbActive(true);
   }, [setIsThumbActive]);
 
   return (

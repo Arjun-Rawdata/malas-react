@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // useNavigate from React Router
-import baseStore from "../store/baseStore"; // Assuming baseStore is used the same way
+import { useNavigate } from "react-router-dom";
+import baseStore from "../store/baseStore";
 
 const CountDown = () => {
-  const navigate = useNavigate(); // React Router's useNavigate
+  const navigate = useNavigate();
   const [count, setCount] = useState(5);
   const setIsCountDown = baseStore((state) => state.setIsCountDown);
 
@@ -13,7 +13,7 @@ const CountDown = () => {
         if (prevCount === 1) {
           clearInterval(intervalId);
           setIsCountDown(false);
-          navigate("/preview"); // Navigates to the "/preview" page
+          navigate("/preview");
           return 0;
         }
         return prevCount - 1;
@@ -21,7 +21,7 @@ const CountDown = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [navigate, setIsCountDown]); // Added navigate to dependency array
+  }, [navigate, setIsCountDown]);
 
   return (
     <div className="absolute z-50 h-screen w-full bg-[#171717]/70 grid place-items-center">

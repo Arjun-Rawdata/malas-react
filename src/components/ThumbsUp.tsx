@@ -1,4 +1,3 @@
-// ThumbsUp.tsx
 import baseStore from "../store/baseStore";
 import { icon } from "../utils/assets";
 
@@ -6,7 +5,7 @@ const ThumbsUp = () => {
   const { setIsThumbActive } = baseStore((state) => state);
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm h-screen flex items-center justify-center z-50">
       <div className=" h-full p-6 flex flex-col justify-center items-center  w-full">
         <img
           className="absolute top-[61px] right-[45px]"

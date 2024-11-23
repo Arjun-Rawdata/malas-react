@@ -8,10 +8,7 @@ import ThumbsUp from "../components/ThumbsUp";
 import baseStore from "../store/baseStore";
 
 const Page = () => {
-  const { isCountDown, isThumbActive } = baseStore((state) => ({
-    isCountDown: state.isCountDown,
-    isThumbActive: state.isThumbActive,
-  }));
+  const { isCountDown, isThumbActive } = baseStore((state) => state);
 
   return (
     <div className="h-screen overflow-hidden relative">
