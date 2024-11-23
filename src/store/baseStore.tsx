@@ -20,7 +20,7 @@ const baseStore = create<BaseStore>((set) => ({
   videoRef: null,
   canvasRef: null,
   isCountDown: false,
-  isThumbActive: false, // true
+  isThumbActive: true, // true
   isImageLoaded: false,
   isWarningActive: false,
 

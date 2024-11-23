@@ -68,6 +68,9 @@ const config = {
       height: {
         screen: "1920px",
       },
+      width: {
+        base: "1080px",
+      },
     },
   },
 };
