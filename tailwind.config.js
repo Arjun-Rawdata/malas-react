@@ -65,6 +65,9 @@ const config = {
           "linear-gradient(180deg, #FDB233 0%, #F0A82B 16.5%, #B17307 100%)",
         "orange-border": "linear-gradient(180deg, #FB8800 0%, #B06106 100%)",
       },
+      height: {
+        screen: "1920px",
+      },
     },
   },
 };

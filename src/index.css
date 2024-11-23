@@ -7,6 +7,12 @@
 @layer base {
   body {
     @apply text-base;
+    @apply bg-primary-white;
+    /* height: 1920px;
+    padding-top: 900px;
+    width: 1080px;
+    display: grid;
+    place-items: center; */
   }
 }
 

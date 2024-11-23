@@ -29,7 +29,7 @@ const Tips = () => {
   ];
 
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="h-full overflow-hidden relative">
       <div className="logo-wrapper">
         <LogoHeader />
       </div>
