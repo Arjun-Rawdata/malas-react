@@ -9,8 +9,22 @@ import Preview from "./pages/Preview";
 import Print from "./pages/Print";
 import Scanner from "./pages/Scanner";
 import Tips from "./pages/Tips";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const preventContextMenu = (event: Event) => event.preventDefault();
+    const preventTouchStart = (event: Event) => event.preventDefault();
+
+    window.addEventListener("contextmenu", preventContextMenu);
+    window.addEventListener("touchstart", preventTouchStart);
+
+    return () => {
+      window.removeEventListener("contextmenu", preventContextMenu);
+      window.removeEventListener("touchstart", preventTouchStart);
+    };
+  }, []);
+
   return (
     <div className="w-full h-screen bg-primary-white">
       <Router>
